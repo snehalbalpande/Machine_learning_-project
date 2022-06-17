@@ -36,3 +36,14 @@ To create version/commit all changes by git
 To send version/changes to github
 
 '''git push origin main'''
+
+To check remote url
+
+'''git remote -v'''
+
+To setup CI/CD pipeline in heroku we need 3 information
+
+HEROKU_EMAIL = snehalbalpande1@gmail.com
+HEROKU_API_KEY = 2bee9681-63c3-472a-b214-280b8e8b7606
+HEROKU_APP_NAME = meachine-learning-app
+
