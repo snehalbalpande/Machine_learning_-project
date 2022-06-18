@@ -11,7 +11,7 @@ DESCRIPTION = "This is the first FSDS Nov batch Machine Learning Project"
 PACKAGES = ["housing"]
 REQUIREMENTS_FILE_NAME = "requirements.txt"
 
-def get_requirements_list()->[str]:
+def get_requirements_list()->List[str]:
     
     """
     Description : This function is going to return list of requirement mention in requirements.txt file
@@ -22,8 +22,7 @@ def get_requirements_list()->[str]:
 
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        return requirement_file.readlines().remove("-e .")
-        
+        return requirement_file.readlines()
 setup(
 name = "PROJECT_NAME",
 version= "VERSION",
