@@ -5,7 +5,7 @@ from typing import List
 
 #Declaring variables for setup functions
 PROJECT_NAME = "housing-predictor"
-VERSION ="0.0.1"
+VERSION ="0.0.3"
 AUTHOR = "Snehal"
 DESCRIPTION = "This is the first FSDS Nov batch Machine Learning Project"
 PACKAGES = ["housing"]
@@ -22,7 +22,7 @@ def get_requirements_list()->[str]:
 
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        return requirement_file.readline().remove("-e .")
+        return requirement_file.readline()
         
 setup(
 name = "PROJECT_NAME",
