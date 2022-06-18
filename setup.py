@@ -22,7 +22,7 @@ def get_requirements_list()->[str]:
 
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        return requirement_file.readline()
+        return requirement_file.readlines().remove("-e .")
         
 setup(
 name = "PROJECT_NAME",
