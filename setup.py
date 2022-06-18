@@ -1,4 +1,4 @@
-from setuptools import setuptools
+from setuptools import setup, find_packages
 from typing import List
 
 
@@ -22,17 +22,14 @@ def get_requirements_list()->[str]:
 
     """
     with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-        return requirement_file.readline()
-
-
+        return requirement_file.readline().remove("-e .")
+        
 setup(
 name = "PROJECT_NAME",
 version= "VERSION",
 author= "AUTHOR",
 description = "DESCRIPTION",
-packages = "PACKAGES",
+packages = "find_packages",
 install_requires = get_requirements_list()
-
 )
 
-packages=PACKAGES
